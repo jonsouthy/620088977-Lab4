@@ -26,9 +26,8 @@ function startClick() {
 }
 
 function overEnd() {
-    if(loss) {
-       alert ("You lose");
-    } else {
-       alert ("You win");
+    if(!loss) {
+        document.getElementById("status").textContent = "You win";
+
     }
 }

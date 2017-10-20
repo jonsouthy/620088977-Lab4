@@ -1,6 +1,7 @@
 var loss = false;
 
 window.onload = function() {
+    document.getElementById("start").onclick = startClick;
     document.getElementById("end").onmouseover = overEnd;
     var boundaries = document.querySelectorAll("div#maze div.boundary");
     for (var x = 0; x < boundaries.length; x++) {
